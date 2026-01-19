@@ -36,6 +36,10 @@ python main.py                        # Context editing / tool runner (beta)
 
 **워크플로우**: `main.py`에서 먼저 연습 → 완성되면 `example/`로 아카이빙
 
+## Git
+
+"깃에 저장해줘" 요청 시 `git add` + `git commit` + `git push`까지 한번에 진행
+
 ## Conventions
 
 - All examples use `python-dotenv` to load API key from `.env`
