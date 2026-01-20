@@ -56,21 +56,21 @@ mkdir -p .vscode
 
 Each example is a standalone script:
 ```bash
-python example/00_api_key.py          # Basic API connection test
-python example/01_multi_turn_conversation.py  # Multi-turn conversation
-python example/02_prefill_json.py     # Response prefill for JSON output
-python example/03_vision_image_analysis.py    # Image analysis (vision)
-python example/04_prompt_caching.py   # Prompt caching with large text
-python main.py                        # Context editing / tool runner (beta)
+python Messages_API/00_api_key.py          # Basic API connection test
+python Messages_API/01_multi_turn_conversation.py  # Multi-turn conversation
+python Messages_API/02_prefill_json.py     # Response prefill for JSON output
+python Messages_API/03_vision_image_analysis.py    # Image analysis (vision)
+python Messages_API/04_prompt_caching.py   # Prompt caching with large text
+python main.py                             # 새로운 API 기능 연습
 ```
 
 ## Architecture
 
 - `main.py` - 새로운 API 기능을 연습/실험하는 작업 파일
-- `example/` - 완성된 예제를 번호순으로 아카이빙 (00_, 01_, ...)
+- `Messages_API/` - 완성된 예제를 번호순으로 아카이빙 (00_, 01_, ...)
 - `data/` - 예제에서 사용하는 샘플 데이터 (텍스트, 이미지)
 
-**워크플로우**: `main.py`에서 먼저 연습 → 완성되면 `example/`로 아카이빙
+**워크플로우**: `main.py`에서 먼저 연습 → 완성되면 `Messages_API/`로 아카이빙
 
 ## Conventions
 
