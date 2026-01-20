@@ -1,3 +1,5 @@
+# Effort 파라미터는 Claude Opus 4.5에서만 지원 (Beta)
+
 import os
 import anthropic
 from dotenv import load_dotenv
