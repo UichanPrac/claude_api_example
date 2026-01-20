@@ -16,6 +16,42 @@ pip install -r requirements.txt
 
 Requires `.env` file with `ANTHROPIC_API_KEY=your_key`.
 
+### VSCode 설정
+
+`.vscode/` 폴더에 다음 파일들이 포함되어 있음:
+- `launch.json`: F5로 main.py 실행
+- `settings.json`: venv 가상환경 자동 활성화
+
+처음 설정 시 `.vscode/` 폴더가 없으면 생성:
+```bash
+mkdir -p .vscode
+```
+
+`.vscode/launch.json`:
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run main.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
+```
+
+`.vscode/settings.json`:
+```json
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",
+    "python.terminal.activateEnvironment": true
+}
+```
+
 ## Running Examples
 
 Each example is a standalone script:
